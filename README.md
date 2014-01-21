@@ -74,3 +74,11 @@ And then just load the page on your server, or MAMP, or WAMP, or whatever you ar
 
 ###Cron?
 If you want to automate it, a tweet will be posted every time the script/page loads. You can Google/look into Cron Jobs which are probably going to be the easiest way.
+
+##Samples
+Some bots made with this script/modified versions thereof:
+[https://twitter.com/DorfFort_eBooks](@DorfFort_eBooks)
+[https://twitter.com/captainsloggame](@captainsLogGame)
+
+##Contributors
+* William Anderson - Developer and Maintainer
