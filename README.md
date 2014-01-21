@@ -3,8 +3,9 @@ MakeDemBots_PHP
 
 ## PHP Templating script for making Twitter Bots
 
-This is a simple script for basically templating out strings for tweeting. Its only useful in that it requires basically no code to get working, and
-lets you jump RIGHT IN!
+This is a simple script for basically templating out strings for tweeting. Its only useful in that it requires basically no code to get working, and lets you jump RIGHT IN!
+
+This scripts just makes and posts tweets as text, it doesn't reply or do any fancy stuff really.
 
 ##Working with the templates
 **Templates**-
@@ -26,6 +27,7 @@ As an example you may want to create a param called **material**
 To start you would *create a file in the paramsVals folder called material.php*
 
 Next in params.php you would add the line 
+	
 	material
 	
 In order to illustrate thism a few sample parameters are already in place in the code.
@@ -35,7 +37,8 @@ Templates are created in the template.php file.
 A new template begins after each line return (much in the same way as parameters)
 A template is a sentence (or whatever) with some blanks in it for parameters.
 To add a parameter into a template surround it in underscores.
-	This is a \_parameter\_ inside a template
+	
+	This is a _parameter_ inside a template
 	
 A template will be chosen at random from the list.
 You may use the same parameter multiple times in a template, or multiple parameters, and it will choose a random value for each individually.
@@ -43,14 +46,31 @@ You may use the same parameter multiple times in a template, or multiple paramet
 	A _pet_, a _pet_, and and some _pets_ were all _adj_.
 
 ##Connecting to Twitter
+This section is more or less peripheral.
 
 ###Setting Up Twitter
+In order to post these tweets to twitter, you will need to create an "app" through [https://dev.twitter.com/](https://dev.twitter.com/)
+
+In index.php you will see places to put in all the secret numbers they give you. 
+*Make sure your app settings allow for read and write*
 
 ###Including OAuth.php and twitteroauth.php
+Grab these files and place them in the top level of the folder, alongside index.php.
+That should be it, but if you have problems later on, check their respective readmes
+[https://github.com/abraham/twitteroauth/tree/master/twitteroauth](OAuth and TwitterOAuth)
 
 ##Posting Tweets/Automating
 
 ###Manually
+If you just want to test and make sure the tweets posts, set the $liveApp boolean at the top of index.php to true;
+	
 	$liveApp=false;
+	
+Turns into..
+	
+	$liveApp=true;
+	
+And then just load the page on your server, or MAMP, or WAMP, or whatever you are making this on.
 
 ###Cron?
+If you want to automate it, a tweet will be posted every time the script/page loads. You can Google/look into Cron Jobs which are probably going to be the easiest way.
