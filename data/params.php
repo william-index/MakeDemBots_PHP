@@ -1,0 +1,3 @@
+adj
+pet
+pets
