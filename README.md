@@ -77,8 +77,8 @@ If you want to automate it, a tweet will be posted every time the script/page lo
 
 ##Samples
 Some bots made with this script/modified versions thereof:
-[https://twitter.com/DorfFort_eBooks](@DorfFort_eBooks)
-[https://twitter.com/captainsloggame](@captainsLogGame)
+* [https://twitter.com/DorfFort_eBooks](@DorfFort_eBooks)
+* [https://twitter.com/captainsloggame](@captainsLogGame)
 
 ##Contributors
 * William Anderson - Developer and Maintainer
